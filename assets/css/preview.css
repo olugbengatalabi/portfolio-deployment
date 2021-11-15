@@ -1,0 +1,139 @@
+.app-name{
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.preview-img__container {
+  margin-top: 2rem;
+  overflow: initial;
+  box-shadow: 0.09rem .35rem .35rem rgba(0,0,0,.075)!important;
+  border: 2px solid rgba(0, 0, 128, 0.385);
+  border-radius:.5rem;
+}
+.visit_page {
+  margin-top: 0rem;
+  margin-right: 1rem;
+  float: right;
+  cursor: pointer;
+}
+
+
+
+p {
+  margin: 0 0 13px 0;
+}
+
+
+.center { text-align: center; }
+
+.preview-details__container {
+  width: 95%;
+  max-width: 1220px;
+  margin: 10rem auto;
+  background-color: rgba(136, 119, 218, 0.289);
+  padding: 3rem;
+  border-radius: 10px;
+}
+
+
+.feature {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  position: relative;
+  margin: 3rem 0;
+  
+}
+
+.feature__number {
+  font-size: 2.5vw;
+  font-weight: 600;
+  padding: 15px 0;
+  position: sticky;
+  top: 1.5em;
+  text-align: center;
+  height: calc(2.5vw + 20px);
+  transition: all 0.2s ease-in;
+}
+
+.feature__content {
+  border-top: 2px solid #fff;
+  padding: 15px 0;
+}
+
+.feature__content .title {
+  font-weight: 600
+}
+
+.feature__content .story {
+  line-height: 1.8;
+}
+
+.story{
+  margin-top: 0.5rem;
+  padding: 0 8rem;
+
+} 
+.story p{
+  font-size: small;
+}
+.story span {
+  color: rgba(38, 5, 70, 0.645);
+  font-weight: 600;
+  font-size: larger;
+} 
+
+.version-control{
+  align-self: center;
+}
+.github {
+  height: 150px;
+  float: right;
+}
+.home__button {
+  display: none;
+}
+@media (max-width: 600px) {
+  .feature__content {
+    grid-template-columns: 1fr;
+  }
+  .story {
+    margin-top: 0rem;
+    padding: 0 1rem;
+
+  } 
+  .preview-details__container {
+    padding: 3rem 0rem;
+    margin-top: 4rem;
+
+    
+  }
+  
+}
+
+@media (max-width: 576px) {
+  .feature__content .story {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .home__button {
+    display: block;
+    margin: 0rem 1rem 5rem 1rem;
+    float: right;
+    cursor: pointer;
+  }
+  .preview-details__container {
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 1100px){
+  .story{
+    padding: 0 1rem;
+  }
+  .feature__number{
+    text-align: start;
+    margin-left: 1rem;
+    font-weight: 800;
+  }
+}
